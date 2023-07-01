@@ -1,0 +1,20 @@
+@mixin border($where) {
+  @if $where == top {
+    border-top: 1px solid #af7832;
+  } @else if $where == right {
+    border-right: 1px solid #af7832;
+  } @else if $where == bottom {
+    border-bottom: 1px solid #af7832;
+  } @else if $where == left {
+    border-left: 1px solid #af7832;
+  } @else {
+    border: 1px solid #af7832;
+  }
+}
+
+@mixin flex--center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}

@@ -1,6 +1,117 @@
+@import "_reset";
+@import "_mixin";
+
 body {
-  background: peru;
-  a {
-    color: blue;
+  width: 100vw;
+  height: 100vh;
+}
+
+.main__grid {
+  width: 100%;
+  height: 100%;
+  display: grid;
+  grid-template: 1fr 9fr 1fr / 1fr 81.81vh 1fr;
+
+  .main__grid-logo {
+    @include border(right);
+  }
+
+  .main__grid-logo,
+  .main__grid-menu {
+    font-size: 20px;
+    color: #af7832;
+    @include flex--center;
+  }
+
+  .main__grid-menu {
+    grid-column: -1/ -2;
+    @include border(left);
+
+    &:hover {
+      background-color: #af7832;
+      color: #fff;
+    }
+    a {
+      width: 100%;
+      height: 100%;
+      @include flex--center;
+    }
+  }
+
+  .main__grid-buttons {
+    display: grid;
+    grid-template-rows: repeat(5, 1fr);
+    @include border(top);
+    @include border(bottom);
+
+    &.main__grid-buttons-l {
+      @include border(right);
+    }
+
+    &.main__grid-buttons-r {
+      @include border(left);
+    }
+
+    .grid__button {
+      @include border(bottom);
+      @include flex--center;
+
+      &:last-child {
+        border-bottom: none;
+      }
+
+      button {
+        width: 100%;
+        height: 100%;
+        color: #af7832;
+        font-size: 20px;
+
+        &:hover {
+          background-color: #af7832;
+          color: #fff;
+        }
+      }
+    }
+  }
+
+  .main__grid-img {
+    width: 100%;
+    height: 100%;
+    background-color: antiquewhite;
+    @include border(top);
+    @include border(bottom);
+  }
+
+  .main__grid-banner {
+    grid-column: 2 / 3;
+    overflow: hidden;
+    position: relative;
+    @include flex--center;
+
+    .grid__banner-text {
+      white-space: nowrap;
+      position: absolute;
+      will-change: transform;
+      animation: marquee 50s linear infinite;
+      color: #af7832;
+      font-size: 20px;
+      text-transform: uppercase;
+      letter-spacing: 1px;
+    }
+
+    @keyframes marquee {
+      from {
+        transform: translateX(0);
+      }
+      to {
+        transform: translateX(-50%);
+      }
+    }
+  }
+  .grid__vacant-l {
+    @include border(right);
+  }
+  .grid__vacant-r {
+    @include border(left);
   }
 }
