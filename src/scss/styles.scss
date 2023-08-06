@@ -1,6 +1,11 @@
 @import "_reset";
 @import "_mixin";
 
+.hidden {
+  display: none;
+  opacity: 0;
+}
+
 body {
   width: 100vw;
   height: 100vh;
@@ -52,7 +57,7 @@ body {
       @include border(left);
     }
 
-    .grid__button {
+    .grid-button-item {
       @include border(bottom);
       @include flex--center;
 
@@ -65,8 +70,14 @@ body {
         height: 100%;
         color: #af7832;
         font-size: 20px;
+        transition: all 200ms;
 
         &:hover {
+          background-color: #af7832;
+          color: #fff;
+        }
+
+        &.hover {
           background-color: #af7832;
           color: #fff;
         }
@@ -78,8 +89,27 @@ body {
     width: 100%;
     height: 100%;
     background-color: antiquewhite;
+    overflow: hidden;
+
     @include border(top);
     @include border(bottom);
+
+    .grid-img-list {
+      width: 100%;
+      height: 100%;
+      position: relative;
+    }
+
+    .grid-img-item {
+      width: 100%;
+      height: 100%;
+      display: none;
+    }
+
+    .grid-img {
+      width: 100%;
+      height: auto;
+    }
   }
 
   .main__grid-banner {
@@ -92,7 +122,7 @@ body {
       white-space: nowrap;
       position: absolute;
       will-change: transform;
-      animation: marquee 50s linear infinite;
+      animation: marquee 10s linear infinite;
       color: #af7832;
       font-size: 20px;
       text-transform: uppercase;

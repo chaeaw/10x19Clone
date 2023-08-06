@@ -2,7 +2,7 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <link rel="stylesheet" href="dist/css/styles.css" />
-  <title>(S)CSS Masterclass</title>
+  <title>10X19 Clone</title>
 </head>
 
 <body>
@@ -18,59 +18,111 @@
       </div>
       <div class="main__grid-menu flex--center">
         <a href="#">MENU</a>
-
       </div>
       <div class="main__grid-buttons main__grid-buttons-l">
-        <div class="grid__button">
-          <button type="button">
+        <div class="grid-button-item">
+          <button class="grid-button" type="button" data-num="10">
             #10
           </button>
         </div>
-        <div class="grid__button">
-          <button type="button">
+        <div class="grid-button-item">
+          <button class="grid-button" type="button" data-num="09">
             #9
           </button>
         </div>
-        <div class="grid__button">
-          <button type="button">
+        <div class="grid-button-item">
+          <button class="grid-button" type="button" data-num="08">
             #8
           </button>
         </div>
-        <div class="grid__button">
-          <button type="button">
+        <div class="grid-button-item">
+          <button class="grid-button" type="button" data-num="07">
             #7
           </button>
         </div>
-        <div class="grid__button">
-          <button type="button">
+        <div class="grid-button-item">
+          <button class="grid-button" type="button" data-num="06">
             #6
           </button>
         </div>
       </div>
-      <div class="main__grid-img"></div>
+      <div class="main__grid-img">
+        <ul class="grid-img-list">
+          <li class="grid-img-item" data-num="01" style="display: block;">
+            <div class="grid-img-box">
+              <img src="./src/img/img1.jpg" alt="이미지1" class="grid-img">
+            </div>
+          </li>
+          <li class="grid-img-item" data-num="02">
+            <div class="grid-img-box">
+              <img src="./src/img/img2.jpg" alt="이미지1" class="grid-img">
+            </div>
+          </li>
+          <li class="grid-img-item" data-num="03">
+            <div class="grid-img-box">
+              <img src="./src/img/img3.jpg" alt="이미지1" class="grid-img">
+            </div>
+          </li>
+          <li class="grid-img-item" data-num="04">
+            <div class="grid-img-box">
+              <img src="./src/img/img4.jpg" alt="이미지1" class="grid-img">
+            </div>
+          </li>
+          <li class="grid-img-item" data-num="05">
+            <div class="grid-img-box">
+              <img src="./src/img/img5.jpg" alt="이미지1" class="grid-img">
+            </div>
+          </li>
+          <li class="grid-img-item" data-num="06">
+            <div class="grid-img-box">
+              <img src="./src/img/img6.jpg" alt="이미지1" class="grid-img">
+            </div>
+          </li>
+          <li class="grid-img-item" data-num="07">
+            <div class="grid-img-box">
+              <img src="./src/img/img7.jpg" alt="이미지1" class="grid-img">
+            </div>
+          </li>
+          <li class="grid-img-item" data-num="08">
+            <div class="grid-img-box">
+              <img src="./src/img/img8.jpg" alt="이미지1" class="grid-img">
+            </div>
+          </li>
+          <li class="grid-img-item" data-num="09">
+            <div class="grid-img-box">
+              <img src="./src/img/img9.jpg" alt="이미지1" class="grid-img">
+            </div>
+          </li>
+          <li class="grid-img-item" data-num="10">
+            <div class="grid-img-box">
+              <img src="./src/img/img10.jpg" alt="이미지1" class="grid-img">
+            </div>
+          </li>
+        </ul>
+      </div>
       <div class="main__grid-buttons main__grid-buttons-r">
-        <div class="grid__button">
-          <button type="button">
+        <div class="grid-button-item">
+          <button class="grid-button" type="button" data-num="05">
             #5
           </button>
         </div>
-        <div class="grid__button">
-          <button type="button">
+        <div class="grid-button-item">
+          <button class="grid-button" type="button" data-num="04">
             #4
           </button>
         </div>
-        <div class="grid__button">
-          <button type="button">
+        <div class="grid-button-item">
+          <button class="grid-button" type="button" data-num="03">
             #3
           </button>
         </div>
-        <div class="grid__button">
-          <button type="button">
+        <div class="grid-button-item">
+          <button class="grid-button" type="button" data-num="02">
             #2
           </button>
         </div>
-        <div class="grid__button">
-          <button type="button">
+        <div class="grid-button-item">
+          <button class="grid-button" type="button" data-num="01">
             #1
           </button>
         </div>
@@ -79,12 +131,14 @@
       <div class="grid__vacant-l"></div>
       <div class="main__grid-banner flex--center">
         <div class="grid__banner-text">
-          Thirty-four artists visually interpret and countdown their favorite albums of 2019
+          Thirty-four artists visually interpret and countdown their favorite albums of 2019.
         </div>
       </div>
       <div class="grid__vacant-r"></div>
     </div>
   </main>
+
+  <script src="./src/js/script.js"></script>
 </body>
 
 </html>
