@@ -3,11 +3,11 @@
   padding: 0;
   box-sizing: border-box;
   color: inherit;
-  font-family: Montserrat;
+  font-family: Montserrat, Noto Sans KR;
 }
 
 a {
-  display: block;
+  display: inline-block;
   cursor: pointer;
   text-decoration: none;
   color: inherit;
@@ -31,4 +31,8 @@ h5,
 h6 {
   font-size: inherit;
   font-weight: normal;
+}
+
+em {
+  font-style: normal;
 }
